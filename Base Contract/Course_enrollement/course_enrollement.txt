@@ -1,0 +1,57 @@
+When
+    [Case
+        (Deposit
+            (Role "ADVHSK")
+            (Role "learner")
+            (Token "" "")
+            (Constant 1000)
+        )
+        (When
+            [Case
+                (Choice
+                    (ChoiceId
+                        "Sarah"
+                        (Address "addr1qy98k9u6q6yne5s66alxtg82pa0cf6kggplfmrrkh6ceamlhd0h2tx57v4rs204ggvz35txt3e7y26dgg6yq6lah8zsqs4pg7i")
+                    )
+                    [Bound 1 2]
+                )
+                (Let
+                    "value"
+                    (DivValue
+                        (MulValue
+                            (AvailableMoney
+                                (Role "learner")
+                                (Token "" "")
+                            )
+                            (Constant 1000)
+                        )
+                        (ChoiceValue
+                            (ChoiceId
+                                "Sarah"
+                                (Address "addr1qy98k9u6q6yne5s66alxtg82pa0cf6kggplfmrrkh6ceamlhd0h2tx57v4rs204ggvz35txt3e7y26dgg6yq6lah8zsqs4pg7i")
+                            ))
+                    )
+                    (When
+                        [Case
+                            (Deposit
+                                (Role "ADVHSK")
+                                (Role "learner")
+                                (Token "" "")
+                                (Constant 1000)
+                            )
+                            (Pay
+                                (Role "learner")
+                                (Party (Role "ADVHSK"))
+                                (Token "" "")
+                                (AvailableMoney
+                                    (Role "learner")
+                                    (Token "" "")
+                                )
+                                Close 
+                            )]
+                        1688373893354 Close 
+                    )
+                )]
+            1688373778502 Close 
+        )]
+    1688373757711 Close 

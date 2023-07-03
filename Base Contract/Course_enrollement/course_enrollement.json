@@ -1,0 +1,81 @@
+{
+  "when": [
+    {
+      "then": {
+        "when": [
+          {
+            "then": {
+              "then": {
+                "when": [
+                  {
+                    "then": {
+                      "token": { "token_name": "", "currency_symbol": "" },
+                      "to": { "party": { "role_token": "ADVHSK" } },
+                      "then": "close",
+                      "pay": {
+                        "in_account": { "role_token": "learner" },
+                        "amount_of_token": {
+                          "token_name": "",
+                          "currency_symbol": ""
+                        }
+                      },
+                      "from_account": { "role_token": "learner" }
+                    },
+                    "case": {
+                      "party": { "role_token": "learner" },
+                      "of_token": { "token_name": "", "currency_symbol": "" },
+                      "into_account": { "role_token": "ADVHSK" },
+                      "deposits": 1000
+                    }
+                  }
+                ],
+                "timeout_continuation": "close",
+                "timeout": 1688373893354
+              },
+              "let": "value",
+              "be": {
+                "divide": {
+                  "times": 1000,
+                  "multiply": {
+                    "in_account": { "role_token": "learner" },
+                    "amount_of_token": {
+                      "token_name": "",
+                      "currency_symbol": ""
+                    }
+                  }
+                },
+                "by": {
+                  "value_of_choice": {
+                    "choice_owner": {
+                      "address": "addr1qy98k9u6q6yne5s66alxtg82pa0cf6kggplfmrrkh6ceamlhd0h2tx57v4rs204ggvz35txt3e7y26dgg6yq6lah8zsqs4pg7i"
+                    },
+                    "choice_name": "Sarah"
+                  }
+                }
+              }
+            },
+            "case": {
+              "for_choice": {
+                "choice_owner": {
+                  "address": "addr1qy98k9u6q6yne5s66alxtg82pa0cf6kggplfmrrkh6ceamlhd0h2tx57v4rs204ggvz35txt3e7y26dgg6yq6lah8zsqs4pg7i"
+                },
+                "choice_name": "Sarah"
+              },
+              "choose_between": [{ "to": 2, "from": 1 }]
+            }
+          }
+        ],
+        "timeout_continuation": "close",
+        "timeout": 1688373778502
+      },
+      "case": {
+        "party": { "role_token": "learner" },
+        "of_token": { "token_name": "", "currency_symbol": "" },
+        "into_account": { "role_token": "ADVHSK" },
+        "deposits": 1000
+      }
+    }
+  ],
+  "timeout_continuation": "close",
+  "timeout": 1688373757711
+}
