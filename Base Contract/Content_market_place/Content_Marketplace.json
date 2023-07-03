@@ -1,0 +1,1 @@
+{"when":[{"then":"close","case":{"party":{"role_token":"learner"},"of_token":{"token_name":"","currency_symbol":""},"into_account":{"role_token":"ADVHSK"},"deposits":1000}}],"timeout_continuation":"close","timeout":1688297944009}

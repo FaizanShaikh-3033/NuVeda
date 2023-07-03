@@ -1,0 +1,10 @@
+When
+    [Case
+        (Deposit
+            (Role "ADVHSK")
+            (Role "learner")
+            (Token "" "")
+            (Constant 1000)
+        )
+        Close ]
+    1688297944009 Close 
