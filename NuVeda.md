@@ -1,4 +1,4 @@
-###NuVeda: Revolutionizing Learning & Development with Cardano
+# NuVeda: Revolutionizing Learning & Development with Cardano
 
 NuVeda is an innovative project that aims to transform the field of learning and development by harnessing the power of Cardano's blockchain technology. Our vision is to create a decentralized and learner-centric platform that offers a wide range of educational opportunities and personalized learning experiences.
 
