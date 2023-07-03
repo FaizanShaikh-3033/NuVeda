@@ -3,6 +3,7 @@ __<h2>Certificate Issuance Contract</h2>__
 
 #### [Code Blocks and explanations] (/Base Contract/Certificate_issuance/Certificate_issuance.json)
 
+
 - Deposit 1 - Land Acquisition: The contract starts with a deposit made by the "Land2023-0" role to a designated address. This deposit signifies the acquisition of a land asset related to the property development project. It involves the transfer of a token called "Land2023-1" and a constant value of 1, indicating the initial step towards property development.
 
 - Deposit 2 - Progressing the Development: Once the first deposit is successfully completed, it triggers another deposit by the same "Land2023-0" role to the same address. This second deposit marks progress in the property development project. It involves the transfer of a different token called "Land2023-2" and a constant value of 1, signifying advancement to the next stage of development.
