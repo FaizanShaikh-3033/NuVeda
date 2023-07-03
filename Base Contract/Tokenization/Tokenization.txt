@@ -1,0 +1,33 @@
+When
+    [Case
+        (Deposit
+            (Role "learner")
+            (Role "learner")
+            (Token "" "certificate-00")
+            (Constant 1)
+        )
+        (When
+            [Case
+                (Deposit
+                    (Role "learner")
+                    (Role "learner")
+                    (Token "" "certificate-01")
+                    (Constant 1)
+                )
+                (When
+                    [Case
+                        (Deposit
+                            (Role "learner")
+                            (Role "learner")
+                            (Token "" "")
+                            (Constant 1)
+                        )
+                        Close ]
+                    (TimeParam "10mins")
+                    Close 
+                )]
+            (TimeParam "10mins")
+            Close 
+        )]
+    (TimeParam "10mins")
+    Close 
