@@ -1,0 +1,39 @@
+When
+    [Case
+        (Deposit
+            (Role "ADVHSK")
+            (Role "learner")
+            (Token "" "")
+            (Constant 1000)
+        )
+        (When
+            [Case
+                (Deposit
+                    (Role "ADVHSK")
+                    (Role "learner")
+                    (Token "" "")
+                    (Constant 1000)
+                )
+                (Pay
+                    (Role "learner")
+                    (Party (Role "ADVHSK"))
+                    (Token "" "")
+                    (Constant 1000)
+                    Close 
+                ), Case
+                (Deposit
+                    (Role "ADVHSK")
+                    (Role "learner")
+                    (Token "" "")
+                    (Constant 1000)
+                )
+                (Pay
+                    (Role "learner")
+                    (Party (Role "ADVHSK"))
+                    (Token "" "")
+                    (Constant 1000)
+                    Close 
+                )]
+            1688386415947 Close 
+        )]
+    1688386313991 Close 
