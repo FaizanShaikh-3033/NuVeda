@@ -1,0 +1,59 @@
+Let
+    "value"
+    (Constant 1)
+    (Let
+        "value"
+        (Constant 1)
+        (Let
+            "value"
+            (MulValue
+                (UseValue "Creator")
+                (DivValue
+                    (UseValue "Sarah")
+                    (Constant 1)
+                )
+            )
+            (When
+                [Case
+                    (Deposit
+                        (Role "ADVHSK")
+                        (Role "Learner")
+                        (Token "" "")
+                        (Constant 1000)
+                    )
+                    (When
+                        [Case
+                            (Deposit
+                                (Role "ADVHSK")
+                                (Role "Learner")
+                                (Token "" "")
+                                (AddValue
+                                    (UseValue "value")
+                                    (UseValue "value")
+                                )
+                            )
+                            (Pay
+                                (Role "Learner")
+                                (Party (Role "ADVHSK"))
+                                (Token "" "")
+                                (Constant 1000)
+                                (Pay
+                                    (Role "Learner")
+                                    (Party (Role "ADVHSK"))
+                                    (Token "" "")
+                                    (UseValue "value")
+                                    (Pay
+                                        (Role "Learner")
+                                        (Party (Role "ADVHSK"))
+                                        (Token "" "")
+                                        (UseValue "value")
+                                        Close 
+                                    )
+                                )
+                            )]
+                        1688373530993 Close 
+                    )]
+                1688373530993 Close 
+            )
+        )
+    )
