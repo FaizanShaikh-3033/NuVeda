@@ -1,0 +1,64 @@
+{
+    "when": [
+        {
+            "then": {
+                "when": [
+                    {
+                        "then": {
+                            "when": [
+                                {
+                                    "then": "close",
+                                    "case": {
+                                        "party": {
+                                            "role_token": "learner"
+                                        },
+                                        "of_token": {
+                                            "token_name": "",
+                                            "currency_symbol": ""
+                                        },
+                                        "into_account": {
+                                            "role_token": "learner"
+                                        },
+                                        "deposits": 1
+                                    }
+                                }
+                            ],
+                            "timeout_continuation": "close",
+                            "timeout": 1688377115111
+                        },
+                        "case": {
+                            "party": {
+                                "role_token": "learner"
+                            },
+                            "of_token": {
+                                "token_name": "certificate-01",
+                                "currency_symbol": ""
+                            },
+                            "into_account": {
+                                "role_token": "learner"
+                            },
+                            "deposits": 1
+                        }
+                    }
+                ],
+                "timeout_continuation": "close",
+                "timeout": 1688377115111
+            },
+            "case": {
+                "party": {
+                    "role_token": "learner"
+                },
+                "of_token": {
+                    "token_name": "certificate-00",
+                    "currency_symbol": ""
+                },
+                "into_account": {
+                    "role_token": "learner"
+                },
+                "deposits": 1
+            }
+        }
+    ],
+    "timeout_continuation": "close",
+    "timeout": 1688377115111
+}
